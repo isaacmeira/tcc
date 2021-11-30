@@ -4,7 +4,7 @@
 
 .past {
   display: flex;
-  height: 550px;
+  height: 65%;
   overflow-x: scroll;
   flex-direction: column;
 }
@@ -12,9 +12,9 @@
 .user {
   justify-self: flex-end;
   text-align: center;
-  width: 30%;
+  width: 50%;
   border-radius: 10px;
-  margin-left: 70%;
+  margin-left: 50%;
   background-color: bisque;
   justify-content: center;
   align-items: center;
@@ -56,7 +56,7 @@
 
 .Main {
   height: 80%;
-  width: 550px;
+   width: 370px;
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
@@ -66,7 +66,7 @@
 .init {
   border-radius: 13px 13px 0 0 ;
   background-color: #004497;
-  height: 60px;
+  height: 80px;
   
   display: flex;
   justify-content: center;
@@ -97,7 +97,7 @@
   align-items: center;
   background-color: #004497;
   display: flex;
-  width: 550px;
+   width: 370px;
   padding: 1px;
   height: 80px;
 }
@@ -159,7 +159,7 @@
   flex-wrap: wrap;
   position: fixed;
   bottom: 135px;
-  width: 550px;
+   width: 370px;
   justify-content: space-around;
   align-items: center;
 }
@@ -180,8 +180,8 @@
   margin-left: 20px;
   margin-right: 30px;
   position: absolute;
-  top: 630px;
-  width: 500px;
+  top: 200px;
+  width: 330px;
   height: 100px;
   justify-content: center;
   align-items: center;
@@ -206,4 +206,11 @@
   background-color: rgb(31, 31, 31);
   color: #f6f6f6;
   border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .past {
+    height:50%;
+  }
 }
