@@ -91,9 +91,9 @@ function App() {
   
       console.log(check)
   
-       if( check.includes('Não consegui entender') ) {
+       if( !check ) {
   
-         setPast((prev) => [...prev, <p >{check}</p>])
+         setPast((prev) => [...prev, <p >Não consegui entender esse comando, por favor tente novamente</p>])
   
        } else {
           handleQuestion(check)
@@ -180,7 +180,6 @@ function App() {
       ) : (
         <p className="header">Seu atendimento foi iniciado, digite sair para finalizar</p>
       ) }
-
 
       <div className="past">
           { pastResponses.map((item) => (
